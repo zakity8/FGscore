@@ -1,0 +1,113 @@
+.icons {
+    cursor: pointer;
+}
+.select {
+    display: flex;
+}
+.roundBtn{
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    transition: .4s;
+    font-size: 3em;
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+/*青色のボタン*/
+.bgColorBlue {
+    background:#87befd;
+}
+.bgColorBlue:hover{
+    background: #668ad8;
+}
+/*黄色のボタン*/
+.bgColorGold {
+    background:gold;
+}
+.bgColorGold:hover {
+    background:rgb(218, 185, 0);
+}
+
+#name0 {
+    border: solid 2px;
+    font-size: 3em;
+    text-align: center;
+    width: 600px;
+    height: 80px;
+}
+#namet {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    border: solid 2px;
+    font-size: 2em;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+}
+#name1 {
+    margin: 2.5px;
+    border: solid 2px;
+    font-size: 3em;
+    text-align: center;
+    width: 300px;
+    height: 80px;
+}
+#name2 {
+    margin: 2.5px;
+    border: solid 2px;
+    font-size: 3em;
+    text-align: center;
+    width: 300px;
+    height: 80px;
+}
+#name3 {
+    margin: 2.5px;
+    border: solid 2px;
+    font-size: 3em;
+    text-align: center;
+    width: 300px;
+    height: 80px;
+}
+#name4 {
+    margin: 2.5px;
+    border: solid 2px;
+    font-size: 3em;
+    text-align: center;
+    width: 300px;
+    height: 80px;
+}
+
+#name0ok {
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    cursor: pointer;
+    color: #FFF;
+    width: 300px;
+    height: 80px;
+    font-size: 3em;
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+#teamok {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    cursor: pointer;
+    color: #FFF;
+    width: 300px;
+    height: 80px;
+    font-size: 3em;
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}

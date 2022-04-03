@@ -1,0 +1,58 @@
+th,td {
+    border: solid 2px;              /* 枠線指定 */
+}
+
+table {
+    margin: 5px;
+    border-collapse: collapse;     /* セルの線を重ねる */
+    -webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+#pTable1 ,#tTable1{
+    width: 80%;
+    min-width: 550px;
+    max-width: 1000px;
+}
+#pTable1, #pTable3, #tTable1, #tTable3{
+    float: left;
+}
+
+th {
+    min-width: 40px;
+    cursor: default;
+    pointer-events: none;
+}
+td {
+    cursor: pointer;
+    text-align: right;
+    background-color: #ffffff;
+}
+
+#pTable2 th, #tTable2 th, #pTable3 th, #tTable3 th{
+    width: 80px;
+}
+#pTable2  tr  td, #tTable2  tr  td  {
+    cursor: default;
+    width: 80px;
+    text-align: left;
+}
+#pTable2 tr .blue, #tTable2 tr .blue {
+    background-color: #8EA9DB;
+}
+#pTable2 tr .yellow, #tTable2 tr .yellow{
+    background-color: #FFFF00;
+}
+#pTable2 tr .orange, #tTable2 tr .orange{
+    background-color: #FFC000;
+}
+#pTable2 tr .red, #tTable2 tr .red{
+    background-color: #FF0000;
+}
+
+#pTable3 *, #tTable3 *{
+    text-align: center;
+    cursor: default;
+}

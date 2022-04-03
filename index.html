@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FallGuysスコア管理</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="front-detection" content="telephone=no">
+        <!-- 他のSNSに張る時用 -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:url" content="https://dice-la.github.io/Image" />
+        <meta property="og:title" content="FallGuysスコア管理" />
+        <meta property="og:description" content="ボタンを押すだけでスコア管理" />
+        <meta property="og:image" content="https://dice-la.github.io/images/og/shrine.png" />
+        <!-- ショートカット用アイコン -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./images/favicon/site.webmanifest">
+        <!-- CSS FILE -->
+        <link rel="stylesheet" href="./css/table.css" type="text/css">
+        <link rel="stylesheet" href="./css/button.css" type="text/css">
+        <link rel="stylesheet" href="./css/display.css" type="text/css">
+        <!-- JS FILE -->
+        <script src="./js/display.js" async type="text/javascript"></script>
+        <script src="./js/pTable.js" async type="text/javascript"></script>
+        <script src="./js/tTable.js" async type="text/javascript"></script>
+    </head>
+    <body>
+        <img src="./images/icon/home.svg" class="icons" width="60px" height="auto"
+              onclick="tohome();">
+        <div id="select">
+            <a href="javascript:void(0)" class="roundBtn bgColorBlue" onclick="personalClick()">個人</a>
+            <a href="javascript:void(0)" class="roundBtn bgColorGold" onclick="teamClick()">チーム</a>
+        </div>
+        <div id="personalName">
+            <input type="text" id='name0' placeholder="配信者名を入力" minlength="1" maxlength="5">
+            <input type="submit" class="bgColorBlue" id="name0ok" value="決定" onclick="showPtable()">
+        </div>
+        <div id="teamName">
+            <input type="text" id='namet' placeholder="チーム名" minlength="1" maxlength="5"><br>
+            <input type="text" id='name1' placeholder="1人目" minlength="1" maxlength="5">
+            <input type="text" id='name2' placeholder="2人目" minlength="1" maxlength="5"><br>
+            <input type="text" id='name3' placeholder="3人目" minlength="1" maxlength="5">
+            <input type="text" id='name4' placeholder="4人目" minlength="1" maxlength="5">
+            <input type="submit" id="teamok" class='bgColorGold'value="決定" onclick="showTtable()">
+        </div>
+        <div id="personalTables">
+            <table id="pTable2">
+                <tr>
+                    <td class="blue"></td><th>クリア</th><td class="yellow"></td><th>敗退</th><td class="orange">(表示+3)</td><th>決勝敗退</th><td class="red">(表示+23)</td><th>優勝</th>
+                </tr>
+            </table>
+            <table id="pTable1">
+                <tr>
+                    <th>name</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th><th>6th</th><th>7th</th><th>8th</th><th>9th</th><th>10th</th><th>小計</th>
+                </tr>
+                <tr>
+                    <th>1試合目</th><td onclick="cellClick(this)">1</td><td onclick="cellClick(this)">3</td><td onclick="cellClick(this)">5</td><td onclick="cellClick(this)">7</td><td onclick="cellClick(this)">9</td><td onclick="cellClick(this)">11</td><td onclick="cellClick(this)">13</td><td onclick="cellClick(this)"y>15</td><td onclick="cellClick(this)"y>17</td><td onclick="cellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th>2試合目</th><td onclick="cellClick(this)">1</td><td onclick="cellClick(this)">3</td><td onclick="cellClick(this)">5</td><td onclick="cellClick(this)">7</td><td onclick="cellClick(this)">9</td><td onclick="cellClick(this)">11</td><td onclick="cellClick(this)">13</td><td onclick="cellClick(this)"y>15</td><td onclick="cellClick(this)"y>17</td><td onclick="cellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th>3試合目</th><td onclick="cellClick(this)">1</td><td onclick="cellClick(this)">3</td><td onclick="cellClick(this)">5</td><td onclick="cellClick(this)">7</td><td onclick="cellClick(this)">9</td><td onclick="cellClick(this)">11</td><td onclick="cellClick(this)">13</td><td onclick="cellClick(this)"y>15</td><td onclick="cellClick(this)"y>17</td><td onclick="cellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th>4試合目</th><td onclick="cellClick(this)">1</td><td onclick="cellClick(this)">3</td><td onclick="cellClick(this)">5</td><td onclick="cellClick(this)">7</td><td onclick="cellClick(this)">9</td><td onclick="cellClick(this)">11</td><td onclick="cellClick(this)">13</td><td onclick="cellClick(this)"y>15</td><td onclick="cellClick(this)"y>17</td><td onclick="cellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th>5試合目</th><td onclick="cellClick(this)">1</td><td onclick="cellClick(this)">3</td><td onclick="cellClick(this)">5</td><td onclick="cellClick(this)">7</td><td onclick="cellClick(this)">9</td><td onclick="cellClick(this)">11</td><td onclick="cellClick(this)">13</td><td onclick="cellClick(this)"y>15</td><td onclick="cellClick(this)"y>17</td><td onclick="cellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th>6試合目</th><td onclick="cellClick(this)">1</td><td onclick="cellClick(this)">3</td><td onclick="cellClick(this)">5</td><td onclick="cellClick(this)">7</td><td onclick="cellClick(this)">9</td><td onclick="cellClick(this)">11</td><td onclick="cellClick(this)">13</td><td onclick="cellClick(this)"y>15</td><td onclick="cellClick(this)"y>17</td><td onclick="cellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th>7試合目</th><td onclick="cellClick(this)">1</td><td onclick="cellClick(this)">3</td><td onclick="cellClick(this)">5</td><td onclick="cellClick(this)">7</td><td onclick="cellClick(this)">9</td><td onclick="cellClick(this)">11</td><td onclick="cellClick(this)">13</td><td onclick="cellClick(this)"y>15</td><td onclick="cellClick(this)"y>17</td><td onclick="cellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th>8試合目</th><td onclick="cellClick(this)">1</td><td onclick="cellClick(this)">3</td><td onclick="cellClick(this)">5</td><td onclick="cellClick(this)">7</td><td onclick="cellClick(this)">9</td><td onclick="cellClick(this)">11</td><td onclick="cellClick(this)">13</td><td onclick="cellClick(this)"y>15</td><td onclick="cellClick(this)"y>17</td><td onclick="cellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th>9試合目</th><td onclick="cellClick(this)">1</td><td onclick="cellClick(this)">3</td><td onclick="cellClick(this)">5</td><td onclick="cellClick(this)">7</td><td onclick="cellClick(this)">9</td><td onclick="cellClick(this)">11</td><td onclick="cellClick(this)">13</td><td onclick="cellClick(this)"y>15</td><td onclick="cellClick(this)"y>17</td><td onclick="cellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th>10試合目</th><td onclick="cellClick(this)">1</td><td onclick="cellClick(this)">3</td><td onclick="cellClick(this)">5</td><td onclick="cellClick(this)">7</td><td onclick="cellClick(this)">9</td><td onclick="cellClick(this)">11</td><td onclick="cellClick(this)">13</td><td onclick="cellClick(this)"y>15</td><td onclick="cellClick(this)"y>17</td><td onclick="cellClick(this)"y>19</td><th>0</th>
+                </tr>
+            </table>
+            <table id="pTable3">
+                <tr>
+                    <th>名前</th><th>合計</th>
+                </tr>
+                <tr>
+                    <td>name</td><td>0</td>
+                </tr>
+            </table>
+        </div>
+        <div id="teamTables">
+            <table id="tTable2">
+                <tr>
+                    <td class="blue"></td><th>クリア</th><td class="yellow"></td><th>敗退</th><td class="orange">(表示+3)</td><th>決勝敗退</th><td class="red">(表示+23)</td><th>優勝</th>
+                </tr>
+            </table>
+            <table id="tTable1">
+                <tr>
+                    <th>チーム名</th><th>名前</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th><th>6th</th><th>7th</th><th>8th</th><th>9th</th><th>10th</th><th>小計</th>
+                </tr>
+                <tr>
+                    <th rowspan="4">1試合目</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                <tr>
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th rowspan="4">2試合目</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr> 
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                <tr>
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th rowspan="4">3試合目</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr> 
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                <tr>
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th rowspan="4">4試合目</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr> 
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                <tr>
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th rowspan="4">5試合目</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr> 
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                <tr>
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th rowspan="4">6試合目</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr> 
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                <tr>
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th rowspan="4">7試合目</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr> 
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                <tr>
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th rowspan="4">8試合目</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr> 
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                <tr>
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th rowspan="4">9試合目</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr> 
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                <tr>
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr>
+                    <th rowspan="4">10試合目</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr> 
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                <tr>
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+            </table>
+            <table id='tTable3'>
+                <tr>
+                    <th>名前</th><th>合計</th>
+                </tr>
+                <tr>
+                    <td>name1</td><td>0</td>
+                </tr>
+                <tr>
+                    <td>name2</td><td>0</td>
+                </tr>
+                <tr>
+                    <td>name3</td><td>0</td>
+                </tr>
+                <tr>
+                    <td>name4</td><td>0</td>
+                </tr>
+                <tr>
+                    <td>合計</td><td>0</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
