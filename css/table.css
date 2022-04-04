@@ -1,5 +1,21 @@
 th,td {
-    border: solid 2px;              /* 枠線指定 */
+    border: solid 1px;              /* 枠線指定 */
+}
+
+.all-border-2px *{
+    border: solid 2px;
+}
+.around-border-2px {
+    border: solid 2px;
+}
+.right-border-2px {
+    border-right: solid 2px;
+}
+.left-border-2px {
+    border-left: solid 2px;
+}
+.bottom-border-2px {
+    border-bottom: solid 2px;
 }
 
 table {
