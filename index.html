@@ -9,7 +9,7 @@
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:url" content="https://zakity8.github.io/FGscore/" />
         <meta property="og:title" content="FallGuysスコア管理" />
-        <meta property="og:description" content="ボタンを押すだけでスコア管理" />
+        <meta property="og:description" content="クリックだけでスコア管理" />
         <meta property="og:image" content="https://raw.githubusercontent.com/zakity8/FGscore/main/images/og/og.png" />
         <!-- ショートカット用アイコン -->
         <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
@@ -26,25 +26,31 @@
         <script src="./js/tTable.js" async type="text/javascript"></script>
     </head>
     <body>
-        <img src="./images/icon/home.svg" class="icons" width="60px" height="auto"
-              onclick="tohome();">
-        <div id="select">
-            <a href="javascript:void(0)" class="roundBtn bgColorBlue" onclick="personalClick()">個人</a>
-            <a href="javascript:void(0)" class="roundBtn bgColorGold" onclick="teamClick()">チーム</a>
+        <img src="./images/icon/home.svg" class="icons" width="60px" height="auto" onclick="tohome();">
+        <!--個人かチームか選ぶ-->
+        <div id="select" class="middlePosition">
+            <a href="javascript:void(0)" class="roundBtn bgColorBlue" onclick="showForm1()">個人</a>
+            <a href="javascript:void(0)" class="roundBtn bgColorGold" onclick="showForm2()">チーム</a>
         </div>
-        <div id="personalName">
-            <input type="text" id='name0' placeholder="配信者名を入力" minlength="1" maxlength="5">
-            <input type="submit" class="bgColorBlue" id="name0ok" value="決定" onclick="showPtable()">
+        <!--個人の入力フォーム(form1)-->
+        <div id="form1" class="middlePosition contentsCenter">
+            <input type="text" id='player' placeholder="配信者名を入力" minlength="1" maxlength="5">
+            <input type="submit" class="showTable bgColorBlue" value="決定" onclick="showPtable()">
         </div>
-        <div id="teamName">
-            <input type="text" id='namet' placeholder="チーム名" minlength="1" maxlength="5"><br>
-            <input type="text" id='name1' placeholder="1人目" minlength="1" maxlength="5">
-            <input type="text" id='name2' placeholder="2人目" minlength="1" maxlength="5"><br>
-            <input type="text" id='name3' placeholder="3人目" minlength="1" maxlength="5">
-            <input type="text" id='name4' placeholder="4人目" minlength="1" maxlength="5">
-            <input type="submit" id="teamok" class='bgColorGold'value="決定" onclick="showTtable()">
+        <!--チームの入力フォーム(form2)-->
+        <div id="form2" class="middlePosition contentsCenter">
+            <input type="text" id='teamName' placeholder="チーム名" minlength="1" maxlength="5">
+            <div class="members">
+                <input type="text" id='member1' class='memberX' placeholder="1人目" minlength="1" maxlength="5">
+                <input type="text" id='member2' class='memberX' placeholder="2人目" minlength="1" maxlength="5">
+                <input type="text" id='member3' class='memberX' placeholder="3人目" minlength="1" maxlength="5">
+                <input type="text" id='member4' class='memberX' placeholder="4人目" minlength="1" maxlength="5">
+            </div>
+            <input type="submit" class='showTable bgColorGold' value="決定" onclick="showTtable()">
         </div>
-       <div id="personalTables">
+
+
+        <div id="form1Tables">
             <table id="pTable2" class="all-border-2px">
                 <tr>
                     <td class="blue"></td><th>クリア</th><td class="yellow"></td><th>敗退</th><td class="orange">(表示+3)</td><th>決勝敗退</th><td class="red">(表示+23)</td><th>優勝</th>
@@ -94,7 +100,7 @@
                 </tr>
             </table>
         </div>
-        <div id="teamTables">
+        <div id="form2Tables">
             <table id="tTable2" class="all-border-2px">
                 <tr>
                     <td class="blue"></td><th>クリア</th><td class="yellow"></td><th>敗退</th><td class="orange">(表示+3)</td><th>決勝敗退</th><td class="red">(表示+23)</td><th>優勝</th>
@@ -220,19 +226,19 @@
                     <th>名前</th><th>合計</th>
                 </tr>
                 <tr class="left-border-2px right-border-2px">
-                    <th>name1</th><td>0</td>
+                    <td>name1</td><td>0</td>
                 </tr>
                 <tr class="left-border-2px right-border-2px">
-                    <th>name2</th><td>0</td>
+                    <td>name2</td><td>0</td>
                 </tr>
                 <tr class="left-border-2px right-border-2px">
-                    <th>name3</th><td>0</td>
+                    <td>name3</td><td>0</td>
                 </tr>
                 <tr class="left-border-2px right-border-2px">
-                    <th>name4</th><td>0</td>
+                    <td>name4</td><td>0</td>
                 </tr>
                 <tr class="around-border-2px">
-                    <th>全員</th><td>0</td>
+                    <td>合計</td><td>0</td>
                 </tr>
             </table>
         </div>

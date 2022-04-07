@@ -1,23 +1,4 @@
-.icons {
-    cursor: pointer;
-}
-.select {
-    display: flex;
-}
-.roundBtn{
-    display: inline-block;
-    text-decoration: none;
-    color: #FFF;
-    width: 300px;
-    height: 300px;
-    line-height: 300px;
-    border-radius: 50%;
-    text-align: center;
-    overflow: hidden;
-    transition: .4s;
-    font-size: 3em;
-    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
-}
+/* ========== ボタン色設定 ========== */
 /*青色のボタン*/
 .bgColorBlue {
     background:#87befd;
@@ -32,82 +13,107 @@
 .bgColorGold:hover {
     background:rgb(218, 185, 0);
 }
-
-#name0 {
-    border: solid 2px;
+/* ==================================================================== */
+/* ========== ホーム画面のCSS ========== */
+/* ==================================================================== */
+.icons {
+    cursor: pointer;
+}
+.select {
+    display: flex;
+}
+.roundBtn{
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    width: 20vw;
+    height: 20vw;
+    line-height: 20vw;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    transition: .4s;
     font-size: 3em;
-    text-align: center;
-    width: 600px;
-    height: 80px;
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
 }
-#namet {
-    position: absolute;
-    top: -10%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    border: solid 2px;
-    font-size: 2em;
-    text-align: center;
-    width: 250px;
-    height: 50px;
+/* ========== 画面が小さいとき ========== */
+@media screen and (max-width: 770px) {
+    .roundBtn{
+        margin: 5px 0;
+        display: block;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+    }
 }
-#name1 {
-    margin: 2.5px;
-    border: solid 2px;
-    font-size: 3em;
-    text-align: center;
-    width: 300px;
-    height: 80px;
-}
-#name2 {
-    margin: 2.5px;
-    border: solid 2px;
-    font-size: 3em;
-    text-align: center;
-    width: 300px;
-    height: 80px;
-}
-#name3 {
-    margin: 2.5px;
-    border: solid 2px;
-    font-size: 3em;
-    text-align: center;
-    width: 300px;
-    height: 80px;
-}
-#name4 {
-    margin: 2.5px;
-    border: solid 2px;
-    font-size: 3em;
-    text-align: center;
-    width: 300px;
-    height: 80px;
-}
-
-#name0ok {
-    position: absolute;
-    top: 160%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
+/* ==================================================================== */
+/* ========== 名前入力画面のCSS ========== */
+/* ==================================================================== */
+/* ========== 決定ボタンのCSS ========== */
+.showTable {
     cursor: pointer;
     color: #FFF;
-    width: 300px;
+    width: 65%;
+    max-width: 300px;
     height: 80px;
     font-size: 3em;
     font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
 }
-#teamok {
-    position: absolute;
-    top: 130%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    cursor: pointer;
-    color: #FFF;
-    width: 300px;
-    height: 80px;
+/* ========== 個人入力のCSS ========== */
+#player {
+    margin: 10px 0px;
+    border: solid 2px;
     font-size: 3em;
-    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+    text-align: center;
+    width: 100%;
+    min-width: 400px;
+    max-width: 600px;
+    height: 80px;
+}
+/* ========== チーム入力のCSS ========== */
+@media (max-width: 719px) {
+    #teamName {
+        margin: 2.5px;
+        border: solid 2px;
+        font-size: 1em;
+        text-align: center;
+        width: 180px;
+        height: 35px;
+    }
+    .memberX {
+        margin: 2.5px;
+        border: solid 2px;
+        font-size: 2em;
+        text-align: center;
+        width: 300px;
+        height: 60px;
+    }
+    .showTable {
+        width: 200px;
+        height: 50px;
+        font-size: 1.5em;
+    }
+}
+@media (min-width: 720px) {
+    #teamName {
+        margin: 2.5px;
+        border: solid 2px;
+        font-size: 2em;
+        text-align: center;
+        width: 180px;
+        height: 50px;
+    }
+    .memberX {
+        margin: 2.5px;
+        border: solid 2px;
+        font-size: 3em;
+        text-align: center;
+        width: 40%;
+        height: 80px;
+    }
+    .showTable {
+        width: 300px;
+        height: 60px;
+        font-size: 2.5em;
+    }
 }
