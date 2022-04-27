@@ -17,6 +17,8 @@ let member2;
 let member3;
 let member4;
 
+let dl;
+
 window.addEventListener("load", function() {
     console.log('ページの読み込みが完了');
 
@@ -33,13 +35,13 @@ window.addEventListener("load", function() {
     form1 = document.getElementById('form1');
     form2 = document.getElementById('form2');
 
-    player = document.getElementById('player')
-    tName = document.getElementById('teamName')
-    member1 = document.getElementById('member1')
-    member2 = document.getElementById('member2')
-    member3 = document.getElementById('member3')
-    member4 = document.getElementById('member4')
-
+    player = document.getElementById('player');
+    tName = document.getElementById('teamName');
+    member1 = document.getElementById('member1');
+    member2 = document.getElementById('member2');
+    member3 = document.getElementById('member3');
+    member4 = document.getElementById('member4');
+    dl = document.getElementById('download');
     select.style.display = 'block'
 });
 
@@ -64,6 +66,7 @@ function showPtable() {
         pt3.rows[1].cells[0].firstChild.data = player.value;
         form1.style.display = 'none';
         pTables.style.display = 'block';
+        dl.style.display = 'inline-block';
     }
 }
 
@@ -89,5 +92,6 @@ function showTtable() {
         tt1.rows[0].cells[0].firstChild.data = tName.value;
         form2.style.display = 'none';
         tTables.style.display = 'block';
+        dl.style.display = 'inline-block';
     }
 }
