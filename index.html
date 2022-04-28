@@ -55,12 +55,12 @@
 
 
         <div id="form1Tables">
-            <table id="pTable2" class="all-border-2px">
+            <table id="pTable2" class="trb-border-2px">
                 <tr>
                     <td class="blue"></td><th>クリア</th><td class="yellow"></td><th>敗退</th><td class="orange">+3</td><th>決勝敗</th><td class="red">+23</td><th>優勝</th>
                 </tr>
             </table>
-            <table id="pTable1" class="all-border-2px">
+            <table id="pTable1" class="tr-border-2px">
                 <tr>
                     <th>name</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th><th>6th</th><th>7th</th><th>8th</th><th>9th</th><th>10th</th><th>小計</th>
                 </tr>
@@ -95,7 +95,7 @@
                     <th>10戦</th><td onclick="cellClick(this)">1</td><td onclick="cellClick(this)">3</td><td onclick="cellClick(this)">5</td><td onclick="cellClick(this)">7</td><td onclick="cellClick(this)">9</td><td onclick="cellClick(this)">11</td><td onclick="cellClick(this)">13</td><td onclick="cellClick(this)"y>15</td><td onclick="cellClick(this)"y>17</td><td onclick="cellClick(this)"y>19</td><th>0</th>
                 </tr>
             </table>
-            <table id="pTable3" class="all-border-2px">
+            <table id="pTable3" class="tr-border-2px">
                 <tr>
                     <th>名前</th><th>合計</th>
                 </tr>
@@ -105,143 +105,163 @@
             </table>
         </div>
         <div id="form2Tables">
-            <table id="tTable2" class="all-border-2px">
+            <table id="tTable2" class="trb-border-2px">
                 <tr>
                     <td class="blue"></td><th>クリア</th><td class="yellow"></td><th>敗退</th><td class="orange">+3</td><th>決勝敗</th><td class="red">+23</td><th>優勝</th>
                 </tr>
             </table>
-            <table id="tTable1" class="around-border-2px">
-                <tr class="bottom-border-2px">
-                    <th class="right-border-2px">チーム名</th><th class="right-border-2px">名前</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th><th>6th</th><th>7th</th><th>8th</th><th>9th</th><th>10th</th><th class="left-border-2px">小計</th>
+            <table id="tTable1">
+                <tr class="first_row">
+                    <th>チーム名</th><th>名前</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th><th>6th</th><th>7th</th><th>8th</th><th>9th</th><th>10th</th><th>小計</th>
                 </tr>
-                <tr>
-                    <th rowspan="4" class="around-border-2px">初戦</th>
-                    <th class="right-border-2px">name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_first">
+                    <th rowspan="4">初戦</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th class="right-border-2px">name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_others">
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                    <th class="right-border-2px">name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
-                <tr class="bottom-border-2px">
-                    <th class="right-border-2px">name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_others">
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th rowspan="4" class="around-border-2px">2戦</th>
-                    <th class="right-border-2px">name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_last">
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th class="right-border-2px">name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_first">
+                    <th rowspan="4">2戦</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                    <th class="right-border-2px">name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
-                <tr class="bottom-border-2px">
-                    <th class="right-border-2px">name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_others">
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th rowspan="4" class="around-border-2px">3戦</th>
-                    <th class="right-border-2px">name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_others">
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th class="right-border-2px">name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_last">
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                    <th class="right-border-2px">name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
-                <tr class="bottom-border-2px">
-                    <th class="right-border-2px">name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_first">
+                    <th rowspan="4">3戦</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th rowspan="4" class="around-border-2px">4戦</th>
-                    <th class="right-border-2px">name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_others">
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th class="right-border-2px">name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_others">
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                    <th class="right-border-2px">name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
-                <tr class="bottom-border-2px">
-                    <th class="right-border-2px">name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_last">
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th rowspan="4" class="around-border-2px">5戦</th>
-                    <th class="right-border-2px">name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_first">
+                    <th rowspan="4">4戦</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th class="right-border-2px">name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_others">
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                    <th class="right-border-2px">name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
-                <tr class="bottom-border-2px">
-                    <th class="right-border-2px">name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_others">
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th rowspan="4" class="around-border-2px">6戦</th>
-                    <th class="right-border-2px">name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_last">
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th class="right-border-2px">name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_first">
+                    <th rowspan="4">5戦</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                    <th class="right-border-2px">name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
-                <tr class="bottom-border-2px">
-                    <th class="right-border-2px">name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_others">
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th rowspan="4" class="around-border-2px">7戦</th>
-                    <th class="right-border-2px">name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_others">
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th class="right-border-2px">name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_last">
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                    <th class="right-border-2px">name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
-                <tr class="bottom-border-2px">
-                    <th class="right-border-2px">name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_first">
+                    <th rowspan="4">6戦</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th rowspan="4" class="around-border-2px">8戦</th>
-                    <th class="right-border-2px">name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_others">
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th class="right-border-2px">name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_others">
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                    <th class="right-border-2px">name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
-                <tr class="bottom-border-2px">
-                    <th class="right-border-2px">name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_last">
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th rowspan="4" class="around-border-2px">9戦</th>
-                    <th class="right-border-2px">name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_first">
+                    <th rowspan="4">7戦</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th class="right-border-2px">name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_others">
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                    <th class="right-border-2px">name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
-                <tr class="bottom-border-2px">
-                    <th class="right-border-2px">name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_others">
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th rowspan="4" class="around-border-2px">10戦</th>
-                    <th class="right-border-2px">name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_last">
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                <tr>
-                    <th class="right-border-2px">name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_first">
+                    <th rowspan="4">8戦</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
-                    <th class="right-border-2px">name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
-                <tr>
-                    <th class="right-border-2px">name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th class="left-border-2px">0</th>
+                <tr class="nth_others">
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr class="nth_others">
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr class="nth_last">
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr class="nth_first">
+                    <th rowspan="4">9戦</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr class="nth_others">
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr class="nth_others">
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr class="nth_last">
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr class="nth_first">
+                    <th rowspan="4">10戦</th>
+                    <th>name1</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr class="nth_others">
+                    <th>name2</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr class="nth_others">
+                    <th>name3</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
+                </tr>
+                <tr class="nth_last">
+                    <th>name4</th><td onclick="tcellClick(this)">1</td><td onclick="tcellClick(this)">3</td><td onclick="tcellClick(this)">5</td><td onclick="tcellClick(this)">7</td><td onclick="tcellClick(this)">9</td><td onclick="tcellClick(this)">11</td><td onclick="tcellClick(this)">13</td><td onclick="tcellClick(this)"y>15</td><td onclick="tcellClick(this)"y>17</td><td onclick="tcellClick(this)"y>19</td><th>0</th>
                 </tr>
             </table>
             <table id='tTable3'>
-                <tr class="around-border-2px">
+                <tr class="ttnth_first">
                     <th>名前</th><th>合計</th>
                 </tr>
-                <tr class="left-border-2px right-border-2px">
+                <tr class="ttnth_others">
                     <td>name1</td><td>0</td>
                 </tr>
-                <tr class="left-border-2px right-border-2px">
+                <tr class="ttnth_others">
                     <td>name2</td><td>0</td>
                 </tr>
-                <tr class="left-border-2px right-border-2px">
+                <tr class="ttnth_others">
                     <td>name3</td><td>0</td>
                 </tr>
-                <tr class="left-border-2px right-border-2px">
+                <tr class="ttnth_last">
                     <td>name4</td><td>0</td>
                 </tr>
-                <tr class="around-border-2px">
+                <tr class="ttnth_last">
                     <td>合計</td><td>0</td>
                 </tr>
             </table>
