@@ -1,26 +1,103 @@
-th,td {
-    border: solid 1px;              /* 枠線指定 */
+/*ボーダー設定*/
+/*配点テーブル*/
+.trb-border-2px{
+    border-top: solid 2px;
+    border-left: solid 2px;
+    border-bottom: solid 2px;
 }
-
-.all-border-2px *{
-    border: solid 2px;
-}
-.around-border-2px {
-    border: solid 2px;
-}
-.right-border-2px {
+.trb-border-2px *{
     border-right: solid 2px;
 }
-.left-border-2px {
+/*個人スコアテーブル*/
+.tr-border-2px{
+    border-left: solid 2px;
+    border-bottom: solid 2px;
+}
+.tr-border-2px *{
+    border-top: solid 2px;
+    border-right: solid 2px;
+}
+/*チームスコアテーブル*/
+#tTable1 {
     border-left: solid 2px;
 }
-.bottom-border-2px {
+/*1行目*/
+.first_row *{
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+}
+.first_row :nth-child(n+1):nth-child(-n+2),
+.first_row :nth-child(n+12):nth-child(-n+13){
+    border-right: solid 2px;
+}
+.first_row :nth-child(n+3):nth-child(-n+11){
+    border-right: solid 1px;
+}
+/*nth_first*/
+.nth_first :first-child{
+    border-right: solid 2px;
+    border-bottom: solid 2px;
+}
+.nth_first :nth-child(2){
+    border-right: solid 2px;
+}
+.nth_first :nth-child(n+2):nth-child(-n+13){
+    border-bottom: solid 1px;
+}
+.nth_first :nth-child(n+3):nth-child(-n+11){
+    border-right: solid 1px;
+}
+.nth_first :nth-child(n+12):nth-child(-n+13){
+    border-right: solid 2px;
+}
+/*nth_others*/
+.nth_others :first-child{
+    border-right: solid 2px;
+}
+.nth_others :nth-child(n+1):nth-child(-n+12){
+    border-bottom: solid 1px;
+}
+.nth_others :nth-child(n+2):nth-child(-n+10){
+    border-right: solid 1px;
+}
+.nth_others :nth-child(n+11):nth-child(-n+12){
+    border-right: solid 2px;
+}
+/*nth_last*/
+.nth_last :first-child{
+    border-right: solid 2px;
+}
+.nth_last :nth-child(n+1):nth-child(-n+12){
+    border-bottom: solid 2px;
+}
+.nth_last :nth-child(n+2):nth-child(-n+10){
+    border-right: solid 1px;
+}
+.nth_last :nth-child(n+11):nth-child(-n+12){
+    border-right: solid 2px;
+}
+/*チーム合計*/
+#tTable3 :first-child{
+    border-left: solid 2px;
+    border-right: solid 1px;
+}
+#tTable3 :last-child{
+    border-right: solid 2px;
+}
+.ttnth_first *{
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+}
+.ttnth_others *{
+    border-bottom: solid 1px;
+}
+.ttnth_last *{
     border-bottom: solid 2px;
 }
 
 table {
     margin: 5px;
-    border-collapse: collapse;     /* セルの線を重ねる */
+    border-spacing: 0px;
     -webkit-user-select: none;
 	   -moz-user-select: none;
 	    -ms-user-select: none;
@@ -29,7 +106,7 @@ table {
 
 #pTable1 ,#tTable1{
     width: 80%;
-    min-width: 550px;
+    /*min-width: 550px;*/
     max-width: 1000px;
 }
 #pTable1, #pTable3, #tTable1, #tTable3{
