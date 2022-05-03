@@ -28,6 +28,7 @@ window.addEventListener("load", function() {
     tt1 = document.getElementById('tTable1');
     tt3 = document.getElementById('tTable3');
     pt1 = document.getElementById('pTable1');
+    pt2 = document.getElementById('pTable2');
     pt3 = document.getElementById('pTable3');
 
     select = document.getElementById('select');
@@ -42,11 +43,44 @@ window.addEventListener("load", function() {
     member3 = document.getElementById('member3');
     member4 = document.getElementById('member4');
     dl = document.getElementById('download');
-    select.style.display = 'block'
+    tabs.elements[0].checked = 'true';
+    setPointvalue();
+    select.style.display = 'none'
 });
 
 function tohome() {
     location.reload();
+}
+
+function showSelect() {
+    select.style.display = 'block';
+    tabf.style.display = 'none';
+
+    attendPoint = attend.value;
+    advancePoint = advance.value;
+    nr = nround.value - 1;
+    bonusPoint = bonus.value;
+    finalPoint = final.value;
+    crownPoint = crown.value;
+    winPoint = parseInt(finalPoint)+parseInt(crownPoint);
+    /*ここに点数を変える何か*/
+    if(!(tabs.elements[0].checked)){
+        
+        pt2.rows[0].cells[4].firstChild.data = '+'+finalPoint;
+        pt2.rows[0].cells[6].firstChild.data = '+'+ winPoint;
+        for (let i = 1; i < 11; i++){
+            for (let j = 1; j < 11; j++){
+                if (nr<j){
+                    pt1.rows[i].cells[j].firstChild.data = parseInt(attendPoint) + parseInt((j-1)*advancePoint) + parseInt(bonusPoint);
+                }
+                else {
+                    pt1.rows[i].cells[j].firstChild.data = parseInt(attendPoint) + parseInt((j-1)*advancePoint);
+                }
+            }
+        }
+        showForm1();
+    }
+    
 }
 
 function showForm1() {

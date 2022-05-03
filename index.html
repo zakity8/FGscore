@@ -20,21 +20,63 @@
         <link rel="stylesheet" href="./css/table.css" type="text/css">
         <link rel="stylesheet" href="./css/button.css" type="text/css">
         <link rel="stylesheet" href="./css/display.css" type="text/css">
+        <link rel="stylesheet" href="./css/tab.css" type="text/css">
         <!-- JS FILE -->
         <script src="./js/display.js" async type="text/javascript"></script>
         <script src="./js/pTable.js" async type="text/javascript"></script>
         <script src="./js/tTable.js" async type="text/javascript"></script>
         <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
         <script src="./js/print.js" async type="text/javascript"></script>
-
+        <script src="./js/tab.js" async type="text/javascript"></script>
     </head>
     <body>
         <img src="./images/icon/home.svg" class="icons" width="60px" height="auto" onclick="tohome();">
         <img src="./images/icon/download.svg" id="download" class="icons" width="60px" height="auto" onclick="printPage()" style="display: none;">
+        <!--配点方法を決める-->
+        <div id="tabForm">
+            <form id="tabs">
+                <input id="amo" type="radio" name="tab_item">
+                <label class="tab_item" for="amo">アモアス部杯</label>
+
+                <input id="fall" type="radio" name="tab_item">
+                <label class="tab_item" for="fall">第5回フォールガイ部</label>
+
+                <input id="cus" type="radio" name="tab_item">
+                <label class="tab_item" for="cus">オリジナル</label>
+            </form>
+            <div class="tab_content">
+                <table>
+                    <tr>
+                        <th rowspan="3" style="writing-mode: tb-rl;">
+                            基礎点
+                        </th>
+                        <td><span class="spanLeft">（1）参加ポイント</span><span class="spanRight"><input type="tel" maxlength="3" placeholder="0" id="attend">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="spanLeft">（2）ラウンド毎進出ポイント</span><span class="spanRight">+<input type="tel" maxlength="3" placeholder="0" id="advance">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="spanLeft">（3）第<input type="tel" maxlength="3" placeholder="0" id="nround">R以降の基礎点ボーナス</span><span class="spanRight">+<input type="tel" maxlength="3" placeholder="0" id="bonus">P</span></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th rowspan="2" style="writing-mode: tb-rl;">
+                            追加点
+                        </th>
+                        <td><span class="spanLeft">・決勝進出</span><span class="spanRight">+<input type="tel" maxlength="3" placeholder="0" id="final">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="spanLeft">・優勝</span><span class="spanRight">(決勝進出)+<input type="tel" maxlength="3" placeholder="0" id="crown">P</span></td>
+                    </tr>
+                </table>
+            </div>
+            <input type="submit" class="showSelect bgColorGreen" value="Next" onclick="showSelect()">
+        </div>
         <!--個人かチームか選ぶ-->
         <div id="select" class="middlePosition">
-            <a href="javascript:void(0)" class="roundBtn bgColorBlue" onclick="showForm1()">個人</a>
-            <a href="javascript:void(0)" class="roundBtn bgColorGold" onclick="showForm2()">チーム</a>
+            <a href="javascript:void(0)" class="roundBtn bgColorBlue" onclick="showForm1()" id="selectP">個人</a>
+            <a href="javascript:void(0)" class="roundBtn bgColorGold" onclick="showForm2()" id="selectT">チーム</a>
         </div>
         <!--個人の入力フォーム(form1)-->
         <div id="form1" class="middlePosition contentsCenter">

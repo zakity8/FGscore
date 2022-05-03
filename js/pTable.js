@@ -33,15 +33,15 @@ function cellClick(TD) {
     else if (TD.style.backgroundColor=='rgb(255, 255, 0)'){
         TD.style.backgroundColor = '#FFC000';
         
-        //小計を入力(TD.innerText + 3)
-        pt1.rows[TD.parentNode.rowIndex].cells[11].firstChild.data = parseInt(TD.innerText) + 3;
+        //小計に出力(TD.innerText + 3)
+        pt1.rows[TD.parentNode.rowIndex].cells[11].firstChild.data = parseInt(TD.innerText) +parseInt(finalPoint);
     }
     /*赤色にする*/
     else if (TD.style.backgroundColor=='rgb(255, 192, 0)'){
         TD.style.backgroundColor = '#FF0000';
         
-        //小計を入力(TD.innerText + 23)
-        pt1.rows[TD.parentNode.rowIndex].cells[11].firstChild.data = parseInt(TD.innerText) + 23;
+        //小計に出力(TD.innerText + 23)
+        pt1.rows[TD.parentNode.rowIndex].cells[11].firstChild.data = parseInt(TD.innerText) +winPoint;
     }
     /*戻す*/
     else {

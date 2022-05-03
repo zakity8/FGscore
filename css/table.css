@@ -94,8 +94,9 @@
 .ttnth_last *{
     border-bottom: solid 2px;
 }
+/*↑ボーダー設定↑*/
 
-table {
+#form1Tables table, #form2Tables table {
     margin: 5px;
     border-spacing: 0px;
     -webkit-user-select: none;
@@ -113,12 +114,12 @@ table {
     float: left;
 }
 
-th {
+#form1Tables table th, #form2Tables table th {
     min-width: 40px;
     cursor: default;
     pointer-events: none;
 }
-td {
+#form1Tables table td, #form2Tables table td {
     cursor: pointer;
     text-align: right;
     background-color: #ffffff;

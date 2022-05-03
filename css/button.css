@@ -13,6 +13,28 @@
 .bgColorGold:hover {
     background:rgb(218, 185, 0);
 }
+/*緑色のボタン*/
+.bgColorGreen {
+    background:#5ab4bd;
+}
+.bgColorGreen:hover {
+    background:#86c0c5;
+}
+/* ==================================================================== */
+/* ========== 大会選択のCSS ========== */
+/* ==================================================================== */
+.showSelect {
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    cursor: pointer;
+    color: #FFF;
+    width: 120px;
+    height: 40px;
+    font-size: 1em;
+    border-radius: 10px;
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
 /* ==================================================================== */
 /* ========== ホーム画面のCSS ========== */
 /* ==================================================================== */

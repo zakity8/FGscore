@@ -47,14 +47,14 @@ function tcellClick(TD) {
         TD.style.backgroundColor = '#FFC000';
 
         //小計を入力(TD.innerText + 3)
-        tt1.rows[TD.parentNode.rowIndex].cells[nn].firstChild.data = parseInt(TD.innerText) + 3;
+        tt1.rows[TD.parentNode.rowIndex].cells[nn].firstChild.data = parseInt(TD.innerText) +3;
     }
     /*赤色にする*/
     else if (TD.style.backgroundColor == 'rgb(255, 192, 0)') {
         TD.style.backgroundColor = '#FF0000';
 
         //小計を入力(TD.innerText + 23)
-        tt1.rows[TD.parentNode.rowIndex].cells[nn].firstChild.data = parseInt(TD.innerText) + 23;
+        tt1.rows[TD.parentNode.rowIndex].cells[nn].firstChild.data = parseInt(TD.innerText) +3 +20;
     }
     /*戻す*/
     else {
