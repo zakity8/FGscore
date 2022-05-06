@@ -56,8 +56,9 @@ input[name="tab_item"] {
     writing-mode: vertical-rl; 
     -webkit-writing-mode: vertical-rl;
     border: solid 2px;
-    width: 30px;
+    width: 44px;
     padding: 5px;
+    -webkit-text-align-last: justify;       /* Chrome・Firefox用 */
     text-align-last: justify;       /* Chrome・Firefox用 */
     text-justify: inter-ideograph;  /* IE・Edge用 */
 }
