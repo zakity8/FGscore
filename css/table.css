@@ -119,7 +119,7 @@
     cursor: default;
     pointer-events: none;
 }
-#form1Tables table td, #form2Tables table td {
+#pTable1 td, #tTable1 td {
     cursor: pointer;
     text-align: right;
     background-color: #ffffff;
@@ -128,7 +128,7 @@
 #pTable2 th, #tTable2 th, #pTable3 th, #tTable3 th{
     width: 80px;
 }
-#pTable2  tr  td, #tTable2  tr  td  {
+#pTable2 tr td, #tTable2 tr td  {
     cursor: default;
     width: 80px;
     text-align: left;
@@ -146,7 +146,7 @@
     background-color: #FF0000;
 }
 
-#pTable3 *, #tTable3 *{
+#pTable3 td, #tTable3 td {
     text-align: center;
     cursor: default;
 }
