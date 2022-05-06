@@ -56,6 +56,7 @@ input[name="tab_item"] {
     border: solid 2px;
     width: 30px;
     padding: 5px;
+    text-orientation: upright;
     text-align-last: justify;       /* Chrome・Firefox用 */
     text-justify: inter-ideograph;  /* IE・Edge用 */
 }
