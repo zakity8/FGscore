@@ -73,6 +73,8 @@ input[name="tab_item"] {
     color: #000;
     text-align: center;
     background-color: #fff;
+    -webkit-text-fill-color: #000;
+    opacity: 1;
     border: none;
 }
 
