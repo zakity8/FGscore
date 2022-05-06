@@ -15,3 +15,6 @@
 #form2Tables {
     display: none;
 }
+html {
+  touch-action: manipulation;
+}
