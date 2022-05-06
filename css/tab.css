@@ -52,11 +52,12 @@ input[name="tab_item"] {
          user-select: none;
     margin: 5px;
 }
-.tab_content th {
+.tab_content tr th {
+    writing-mode: vertical-rl; 
+    -webkit-writing-mode: vertical-rl;
     border: solid 2px;
     width: 30px;
     padding: 5px;
-    text-orientation: upright;
     text-align-last: justify;       /* Chrome・Firefox用 */
     text-justify: inter-ideograph;  /* IE・Edge用 */
 }
@@ -74,8 +75,6 @@ input[name="tab_item"] {
     color: #000;
     text-align: center;
     background-color: #fff;
-    -webkit-text-fill-color: #000;
-    opacity: 1;
     border: none;
 }
 
