@@ -35,6 +35,13 @@
     border-radius: 10px;
     font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
 }
+@media (max-width: 533px) {
+    .showSelect {
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+    }
+}
 /* ==================================================================== */
 /* ========== ホーム画面のCSS ========== */
 /* ==================================================================== */

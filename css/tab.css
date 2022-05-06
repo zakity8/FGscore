@@ -6,7 +6,19 @@
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 700px;
+    height: 325px;
     margin: 0 auto;
+}
+@media (max-width: 700px) {
+    #tabForm {
+        position: relative;
+        margin-top: 50px;
+        padding-bottom: 40px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 /*タブのスタイル*/
@@ -50,20 +62,17 @@ input[name="tab_item"] {
     overflow: hidden;
 }
 .tab_content table {
+    width: 100%;
+    max-width: 438px;
     -webkit-user-select: none;
     -moz-user-select: none;
      -ms-user-select: none;
          user-select: none;
     margin: 5px;
 }
-.tab_content .spanLeft {
-    display: inline-block;
-    width: 17em;
-}
+
 .tab_content .spanRight {
-    display: inline-block;
-    text-align: right;
-    width: 10em;
+    float: right;
 }
 
 /*ここから調整の必要*/
@@ -82,5 +91,3 @@ input[name="tab_item"] {
     background-color: #fff;
     border: none;
 }
-
-
